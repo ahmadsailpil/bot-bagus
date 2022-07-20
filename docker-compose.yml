@@ -1,15 +1,15 @@
-version: "3.9" 
-services:
-  web:
-    build: .
-    ports:
-      - "8000:5000"
-    volumes:
-      - .:/code
+versi : " 3.9 "   # opsional sejak v1.27.0
+layanan :
+  web :
+    membangun : .
+    port :
+      - " 8000:5000 "
+    volume :
+      - .:/kode
       - logvolume01:/var/log
-    links:
-      - redis
-  redis:
-    image: redis
-volumes:
-  logvolume01: {}
+    tautan :
+      - ulangi
+  redi :
+    gambar : redis
+volume :
+  logvolume01 : {}
